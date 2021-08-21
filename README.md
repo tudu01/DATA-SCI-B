@@ -1,7 +1,6 @@
 <h1 align="center"> Welcome to Team Data-Sci-B, HackBio 2021 </h1>  
 
 ![image](https://user-images.githubusercontent.com/88287648/128190365-2beca13a-9c53-41b0-83cc-185ae3d8a43c.png)
-![image](https://user-images.githubusercontent.com/88226429/130231147-fc41b500-d913-4e73-8ed0-d4ef1f1d7b5e.png)  
 ![image](https://user-images.githubusercontent.com/88226429/130231250-56ad1196-f01e-4f97-bb6e-0f53df1a9e3a.png)
 
 # DATA-SCI-B
