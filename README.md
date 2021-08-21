@@ -23,6 +23,33 @@ Slack User_Name | Contribution |
 @Anne | Analyzed Unsupervised-learning data |
 @Toyincom | Drafted tutorial's summary |
 
+# Introduction to Machine Learning Using R.
+A  galaxy tutorial on Exploratory Data Analysis (EDA) and supervised and unsupervised learning using R. 
+The analysis on the tutorial was as follows; 
+
+1.	Launch of Rstudio on galaxy or Rstudio  cloud.
+Running the codes to install the required packages. 
+2.	Loading and exploring data 
+•	The data was sourced from The Breast Cancer Wisconsin (Diagnostic) Data Set from the UCI Machine Learning repository.
+•	RNA-Seq data from the study of tooth growth in mouse embryos from the Gene Expression Omnibus ID:GSE76316
+We will first load up the UCI dataset. The dataset itself does not contain column names, we’ve created a second file with only the column names, which we will use. We will be using tidyverse, a collection of R packages for Data Science.
+The exploratory data analysis was used to clean the data set for the analysis.
+3.	Unsupervised Learning; 
+Dimensionality reduction and principal component analysis (PCA)
+Deeper look into the PCA 
+Clustering
+K means
+Optimal k
+Hierarchical clustering
+4.	Supervised learning
+
+Decision tree
+•	Categorical (classification)
+•	Continuous (regression)
+Random forests
+Regression: linear regression
+
+
 ## Workflow
 
 ![Image from iOS (1)](https://user-images.githubusercontent.com/58401006/130317834-61b59f03-84ae-46ce-8b58-d6264fbbd9b2.png)
@@ -485,3 +512,9 @@ err <- bc_train$Radius.Mean-bc_train$pred
 rss <- sum(err^2)
 (rsq <- 1-(rss/tss))
 ```
+
+
+##Reference
+
+1.	Fotis E. Psomopoulos, 2021 Introduction to Machine Learning using R (Galaxy Training Materials). https://training.galaxyproject.org/training-material/topics/statistics/tutorials/intro-to-ml-with-r/tutorial.html Online; accessed Sat Aug 21 2021
+2.	Batut et al., 2018 Community-Driven Data Analysis Training for Biology Cell Systems 10.1016/j.cels.2018.05.012
