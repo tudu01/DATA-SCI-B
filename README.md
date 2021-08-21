@@ -24,7 +24,7 @@ Slack User_Name | Contribution |
 @Toyincom | Drafted tutorial's summary |
 
 # Introduction
-The project explored the application of Machine Learning in Omics studies. we analyzed, interpreted and visualized results obtained from the both supervised and unsupervised machine learning technique on the Breast cancer Wisconsin (Diagnostic) Data Set from the UCI Machine Learning repository.  
+The project explored the application of Machine Learning in Omics studies. We analyzed, interpreted and visualized results obtained from both supervised and unsupervised machine learning techniques on the Breast cancer Wisconsin (Diagnostic) Data Set from the UCI Machine Learning repository.  
 
 ## Workflow
 
