@@ -94,6 +94,9 @@ library(GGally)
 ggpairs(breastCancerDataNoID[1:5], aes(color=Diagnosis, alpha=0.4))
 ```
 
+![image](https://user-images.githubusercontent.com/58401006/130315956-01c42dd6-d42f-4a45-8cb7-443c254862bf.png)
+
+
 
 * Center and scale the data  
 ```{r}
@@ -117,7 +120,8 @@ breastCancerDataNoID_tr[1:5] %>% summary()
 library(GGally)
 ggpairs(breastCancerDataNoID_tr[1:5], aes(color=Diagnosis, alpha=0.4))
 ```
-![image](https://user-images.githubusercontent.com/58401006/130315956-01c42dd6-d42f-4a45-8cb7-443c254862bf.png)
+![image (1)](https://user-images.githubusercontent.com/58401006/130315967-e0d92cbd-d25f-4d21-99ea-a64b6baf3f0f.png)
+
 
 
 ### Unsupervised Learning
@@ -163,6 +167,8 @@ ggbiplot(ppv_pca, choices=c(2,3),
   theme_minimal() +
   theme(legend.position =  "bottom")
 ```
+![image (2)](https://user-images.githubusercontent.com/58401006/130316005-7fc27c57-8673-45bc-8395-62e150b9684d.png)
+
 
 
 #### Clustering
@@ -202,6 +208,8 @@ ggplot(as.data.frame(ppv_pca$x), aes(x=PC1, y=PC2, color=as.factor(km.out$cluste
   theme(legend.position = "bottom") +
   labs(title = "K-Means clusters against PCA", x = "PC1", y = "PC2", color = "Cluster", shape = "Diagnosis")
 ```
+![image (3)](https://user-images.githubusercontent.com/58401006/130316009-def0bbf7-2f45-46dd-9137-b157cf294a18.png)
+
 
 * Cross-tabulation- to check how well the cluster of each tumor (clusters 1 and 2) coincide with the labels
 
@@ -253,6 +261,8 @@ ggplot(elbow, aes(x = X2.max_k, y = wss)) +
   geom_line() +
   scale_x_continuous(breaks = seq(1, 20, by = 1))
 ```
+![image (4)](https://user-images.githubusercontent.com/58401006/130316021-9a247666-b0d8-443c-99ec-8331038a9e2c.png)
+
 
 
 #### Hierarchical clustering
