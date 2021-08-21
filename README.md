@@ -1,5 +1,5 @@
 # DATA-SCI-B
-HackBio internship task# group for paricipants interested in data science. We will provide step by step description on how to perform Machine Learning (ML) utilizing R and Galaxy. 
+HackBio internship task# group for paricipants interested in data science. We will provide step by step description on how to perform Machine Learning (ML) utilizing R. 
 
 
 ### Contributors  
@@ -13,7 +13,7 @@ HackBio internship task# group for paricipants interested in data science. We wi
 
 ##### Install required packages  
 
-* Installing required packages
+* Install required packages
 ```{r}
 #install.packages("tidyverse")  
 #install.packages("GGally")    
