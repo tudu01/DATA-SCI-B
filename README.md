@@ -36,16 +36,16 @@ The project explored the application of Machine Learning in Omics studies. we an
 
 * Install required packages
 ```{r}
-#install.packages("tidyverse")  
-#install.packages("GGally")    
-#install.packages("caret")  
-#install.packages("gmodels")    
-#install.packages("rpart")  
-#install.packages("rpart.plot")    
-#install.packages("dendextend")  
-#install.packages("randomForest")   
-#install.packages("mlr3")  
-#install.packages("devtools")  
+install.packages("tidyverse")  
+install.packages("GGally")    
+install.packages("caret")  
+install.packages("gmodels")    
+install.packages("rpart")  
+install.packages("rpart.plot")    
+install.packages("dendextend")  
+install.packages("randomForest")   
+install.packages("mlr3")  
+install.packages("devtools")  
 ```  
 * Install Bioconductor packages  
 
