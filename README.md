@@ -17,11 +17,11 @@ HackBio internship task 2 group for paricipants interested in data science. We w
  
 Slack User_Name | Contribution |
 --------------- | -------------- |
-@Chinaza (leader) | worked on the supervised learning analysis, combining the markdown and poster creation |
-@dele_tunde | worked on the analysis of the unsupervised learning and in creating the markdown |
-@Mamanu | worked on the summary of the tutorial and created and push to GitHub repo, also participated in unsupervised learning |
-@Anne | worked on the analysis of the unsupervised learning  |
-@Toyincom | worked on the summary of the tutorial |
+@Chinaza (leader) | Analyzed Supervised-learning data , combined markdown files, designed poster |
+@dele_tunde | Analyzed Unsupervised-learning data, created markdown files |
+@Mamanu | Drafted tutorial's summary,  Analyzed Unsupervised-learning data, created GitHub repo |
+@Anne | Analyzed Unsupervised-learning data |
+@Toyincom | Drafted tutorial's summary |
 
 ## Workflow
 
