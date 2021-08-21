@@ -24,29 +24,7 @@ Slack User_Name | Contribution |
 @Toyincom | Drafted tutorial's summary |
 
 # Introduction to Machine Learning Using R.
-A  galaxy tutorial on Exploratory Data Analysis (EDA) and supervised and unsupervised learning using R. 
-The analysis on the tutorial was as follows; 
- 
-### Loading and exploring data 
-##### The data was sourced from The Breast Cancer Wisconsin (Diagnostic) Data Set from the UCI Machine Learning repository.
-##### RNA-Seq data from the study of tooth growth in mouse embryos from the Gene Expression Omnibus ID:GSE76316
-
-### The exploratory data analysis was used to clean the data set for the analysis.
-### Unsupervised Learning; 
-##### Dimensionality reduction and principal component analysis (PCA)
-##### Deeper look into the PCA 
-##### Clustering
-##### K means
-##### Optimal k
-##### Hierarchical clustering
-
-#### Supervised learning
-##### Decision tree
-###### Categorical (classification)
-###### Continuous (regression)
-#### Random forests
-#### Regression: linear regression
-
+THe project explored the application of Machine Learning in Omics studies. we analyzed, interpreted and visualized results obtained from the both supervised and unsupervised machine learning technique on the Breast cancer Wisconsin (Diagnostic) Data Set from the UCI Machine Learning repository.  
 
 ## Workflow
 
