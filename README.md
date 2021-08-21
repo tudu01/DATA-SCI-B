@@ -23,8 +23,8 @@ Slack User_Name | Contribution |
 @Anne | Analyzed Unsupervised-learning data |
 @Toyincom | Drafted tutorial's summary |
 
-# Introduction to Machine Learning Using R.
-THe project explored the application of Machine Learning in Omics studies. we analyzed, interpreted and visualized results obtained from the both supervised and unsupervised machine learning technique on the Breast cancer Wisconsin (Diagnostic) Data Set from the UCI Machine Learning repository.  
+# Introduction
+The project explored the application of Machine Learning in Omics studies. we analyzed, interpreted and visualized results obtained from the both supervised and unsupervised machine learning technique on the Breast cancer Wisconsin (Diagnostic) Data Set from the UCI Machine Learning repository.  
 
 ## Workflow
 
