@@ -26,28 +26,26 @@ Slack User_Name | Contribution |
 # Introduction to Machine Learning Using R.
 A  galaxy tutorial on Exploratory Data Analysis (EDA) and supervised and unsupervised learning using R. 
 The analysis on the tutorial was as follows; 
+ 
+### Loading and exploring data 
+##### The data was sourced from The Breast Cancer Wisconsin (Diagnostic) Data Set from the UCI Machine Learning repository.
+##### RNA-Seq data from the study of tooth growth in mouse embryos from the Gene Expression Omnibus ID:GSE76316
 
-1.	Launch of Rstudio on galaxy or Rstudio  cloud.
-Running the codes to install the required packages. 
-2.	Loading and exploring data 
-•	The data was sourced from The Breast Cancer Wisconsin (Diagnostic) Data Set from the UCI Machine Learning repository.
-•	RNA-Seq data from the study of tooth growth in mouse embryos from the Gene Expression Omnibus ID:GSE76316
-We will first load up the UCI dataset. The dataset itself does not contain column names, we’ve created a second file with only the column names, which we will use. We will be using tidyverse, a collection of R packages for Data Science.
-The exploratory data analysis was used to clean the data set for the analysis.
-3.	Unsupervised Learning; 
-Dimensionality reduction and principal component analysis (PCA)
-Deeper look into the PCA 
-Clustering
-K means
-Optimal k
-Hierarchical clustering
-4.	Supervised learning
+### The exploratory data analysis was used to clean the data set for the analysis.
+### Unsupervised Learning; 
+##### Dimensionality reduction and principal component analysis (PCA)
+##### Deeper look into the PCA 
+##### Clustering
+##### K means
+##### Optimal k
+##### Hierarchical clustering
 
-Decision tree
-•	Categorical (classification)
-•	Continuous (regression)
-Random forests
-Regression: linear regression
+#### Supervised learning
+##### Decision tree
+###### Categorical (classification)
+###### Continuous (regression)
+#### Random forests
+#### Regression: linear regression
 
 
 ## Workflow
