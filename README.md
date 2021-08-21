@@ -290,6 +290,8 @@ dist_mat <- dist(breastCancerDataScaled, method = 'euclidean')
 hclust_avg <- hclust(dist_mat, method = 'average')
 plot(hclust_avg)
 ```
+![image (5)](https://user-images.githubusercontent.com/58401006/130316028-b99c7262-1d30-45eb-8d9f-d51c7353bd8a.png)
+
 
 dendrogram is built and every data point finally merges into a single cluster with the height(distance) shown on the y-axis.
 
@@ -306,6 +308,8 @@ rect.hclust(hclust_avg , k = 2, border = c("red","green"), which = c(1, 2))
 # Draw a line at the height that the cut takes place
 abline(h = 18, col = 'red', lwd=3, lty=2)
 ```
+![image (6)](https://user-images.githubusercontent.com/58401006/130316044-bbf6db0c-3222-46af-8685-e6609114f8d6.png)
+
 
   + use the **color_branches()** function from the **dendextend** library to visualize our tree with different colored branches.
 
@@ -316,6 +320,8 @@ avg_dend_obj <- as.dendrogram(hclust_avg)
 avg_col_dend <- color_branches(avg_dend_obj, k = 2, groupLabels=TRUE)
 plot(avg_col_dend, main = "Cluster dendrogram with color per cluster (k = 2)", xlab = "Breast Cancer ID", ylab = "Height")
 ```
+![image (7)](https://user-images.githubusercontent.com/58401006/130316053-57e5a089-c047-405b-9db5-08f89cfa7e7f.png)
+
 
   + Change the way the branches are colored, to reflect **Diagnosis** value
 
@@ -323,6 +329,8 @@ plot(avg_col_dend, main = "Cluster dendrogram with color per cluster (k = 2)", x
   avg_col_dend <- color_branches(avg_dend_obj, clusters = breastCancerData$Diagnosis)
 plot(avg_col_dend, main = "Cluster dendrogram with Diagnosis color", xlab = "Breast Cancer ID", ylab = "Height")
 ```
+![image (8)](https://user-images.githubusercontent.com/58401006/130316061-ed8f99ce-2ba8-4e26-b982-94479da8967d.png)
+
 
   + Clusters in relationship to the Principal components
 
@@ -333,6 +341,8 @@ ggplot(as.data.frame(ppv_pca$x), aes(x=PC1, y=PC2, color=as.factor(cut_avg), sha
   theme(legend.position = "bottom") +
   labs(title = "Hierarchical clustering (cut at k=2) against PCA", x = "PC1", y = "PC2", color = "Cluster", shape = "Diagnosis")
 ```
+![image (9)](https://user-images.githubusercontent.com/58401006/130316079-d666847b-ab93-4820-8f6c-0c839c285920.png)
+
 
 ### Supervised Learning  
 
