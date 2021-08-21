@@ -365,6 +365,8 @@ breastCancerData.model <- rpart(myFormula, method = "class", data = breastCancer
 print(breastCancerData.model$cptable)
 rpart.plot(breastCancerData.model)
 ```
+![image (10)](https://user-images.githubusercontent.com/58401006/130316088-e65dcc91-3a42-466a-b189-f0ca91832537.png)
+
 
 * Select the tree with the minimal prediction error  
 ```{r}
@@ -374,6 +376,8 @@ breastCancerData.pruned.model <- prune(breastCancerData.model, cp = cp)
 rpart.plot(breastCancerData.pruned.model)
 table(predict(breastCancerData.pruned.model, type="class"), breastCancerData.train$Diagnosis)
 ```
+![image (11)](https://user-images.githubusercontent.com/58401006/130316099-09a2a64c-9248-4fd2-ac75-b4ce2c6f4ae7.png)
+
 
 * Check how prediction works in dataset
 ```{r}
@@ -381,6 +385,8 @@ BreastCancer_pred <- predict(breastCancerData.pruned.model, newdata = breastCanc
 plot(BreastCancer_pred ~ Diagnosis, data = breastCancerData.test, xlab = "Observed", ylab = "Prediction")
 table(BreastCancer_pred, breastCancerData.test$Diagnosis)
 ```
+![image (12)](https://user-images.githubusercontent.com/58401006/130316130-405c5857-098e-4f87-9805-f454acd223e3.png)
+
 
 #### Random Forest  
 
@@ -401,12 +407,16 @@ print(rf)
 ```{r}
 plot(rf, main = "")
 ```
+![image (14)](https://user-images.githubusercontent.com/58401006/130316141-5813410b-0625-4e5b-b7f2-49144a683cbe.png)
+
 
 * Review the variables with the highest importance
 ```{r}
 importance(rf)
 varImpPlot(rf)
 ```
+![image (15)](https://user-images.githubusercontent.com/58401006/130316150-be8321a7-47a2-4f26-ac23-ed1e60f00673.png)
+
 
 * Prediction of diagnosis for the test set and select the feature
 ```{r}
@@ -416,6 +426,8 @@ plot(margin(rf, breastCancerData.test$Diagnosis))
 result <- rfcv(breastCancerData.train, breastCancerData.train$Diagnosis, cv.fold = 3)
 with(result, plot(n.var, error.cv, log="x", type="o", lwd=2))
 ```
+![image (16)](https://user-images.githubusercontent.com/58401006/130316154-bd89b674-5e82-4bfa-b1ad-c478293b7cdb.png)
+
 
 ####  Linear Regression
 
@@ -439,6 +451,7 @@ plot(preds, bc$Radius.Mean, xlab = "Prediction", ylab = "Observed")
 abline(a = 0, b = 1)
 summary(bc_model_full)
 ```
+![image (17)](https://user-images.githubusercontent.com/58401006/130316173-413fb2a7-562a-4a33-b314-9faba8c2238c.png)
 
 * Split dataset create model and visualize the predictions
 ```{r}
@@ -451,12 +464,14 @@ summary(bc_model)
 bc_train$pred <- predict(bc_model)
 ggplot(bc_train, aes(x = pred, y = Radius.Mean)) + geom_point() + geom_abline(color = "blue")
 ```
+![image (18)](https://user-images.githubusercontent.com/58401006/130316176-0b8db2fa-9f0d-4376-9654-25f8fd9d88a8.png)
 
 * Predict using test data and plot 
 ```{r}
 bc_test$pred <- predict(bc_model, newdata = bc_test)
 ggplot(bc_test, aes(x = pred, y = Radius.Mean)) + geom_point() + geom_abline(color = "blue")
 ```
+![image (19)](https://user-images.githubusercontent.com/58401006/130316181-96fdd38b-d491-40a5-a645-7d712844c3d7.png)
 
 * Calculate how much of variability in dependent variable can be explained by the model
 ```{r}
