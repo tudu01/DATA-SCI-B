@@ -23,6 +23,9 @@ Slack User_Name | Contribution |
 @Anne | worked on the analysis of the unsupervised learning  |
 @Toyincom | worked on the summary of the tutorial |
 
+## Workflow
+
+![Image from iOS](https://user-images.githubusercontent.com/58401006/130315819-9f151a41-8fe7-4f5b-9de9-7eedb5d9e498.png)
 
 #### Procedure  
 
