@@ -514,7 +514,7 @@ rss <- sum(err^2)
 ```
 
 
-##Reference
+## Reference
 
 1.	Fotis E. Psomopoulos, 2021 Introduction to Machine Learning using R (Galaxy Training Materials). https://training.galaxyproject.org/training-material/topics/statistics/tutorials/intro-to-ml-with-r/tutorial.html Online; accessed Sat Aug 21 2021
 2.	Batut et al., 2018 Community-Driven Data Analysis Training for Biology Cell Systems 10.1016/j.cels.2018.05.012
