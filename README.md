@@ -25,7 +25,7 @@ Slack User_Name | Contribution |
 
 ## Workflow
 
-![Image from iOS](https://user-images.githubusercontent.com/58401006/130315819-9f151a41-8fe7-4f5b-9de9-7eedb5d9e498.png)
+![Image from iOS (1)](https://user-images.githubusercontent.com/58401006/130317834-61b59f03-84ae-46ce-8b58-d6264fbbd9b2.png)
 
 ## Procedure  
 
