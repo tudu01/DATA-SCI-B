@@ -407,7 +407,9 @@ print(rf)
 ```{r}
 plot(rf, main = "")
 ```
-![image (14)](https://user-images.githubusercontent.com/58401006/130316141-5813410b-0625-4e5b-b7f2-49144a683cbe.png)
+
+
+![image (20)](https://user-images.githubusercontent.com/58401006/130318091-6f80d5a9-fc5d-4528-bbd1-9304ccf483d4.png)
 
 
 * Review the variables with the highest importance
@@ -415,7 +417,7 @@ plot(rf, main = "")
 importance(rf)
 varImpPlot(rf)
 ```
-![image (15)](https://user-images.githubusercontent.com/58401006/130316150-be8321a7-47a2-4f26-ac23-ed1e60f00673.png)
+![image (14)](https://user-images.githubusercontent.com/58401006/130316141-5813410b-0625-4e5b-b7f2-49144a683cbe.png)
 
 
 * Prediction of diagnosis for the test set and select the feature
@@ -426,6 +428,8 @@ plot(margin(rf, breastCancerData.test$Diagnosis))
 result <- rfcv(breastCancerData.train, breastCancerData.train$Diagnosis, cv.fold = 3)
 with(result, plot(n.var, error.cv, log="x", type="o", lwd=2))
 ```
+![image (15)](https://user-images.githubusercontent.com/58401006/130316150-be8321a7-47a2-4f26-ac23-ed1e60f00673.png)
+
 ![image (16)](https://user-images.githubusercontent.com/58401006/130316154-bd89b674-5e82-4bfa-b1ad-c478293b7cdb.png)
 
 
