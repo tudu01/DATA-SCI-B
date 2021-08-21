@@ -117,6 +117,8 @@ breastCancerDataNoID_tr[1:5] %>% summary()
 library(GGally)
 ggpairs(breastCancerDataNoID_tr[1:5], aes(color=Diagnosis, alpha=0.4))
 ```
+![image](https://user-images.githubusercontent.com/58401006/130315956-01c42dd6-d42f-4a45-8cb7-443c254862bf.png)
+
 
 ### Unsupervised Learning
 
